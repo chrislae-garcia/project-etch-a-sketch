@@ -34,6 +34,7 @@ document.addEventListener('click', (e) => {
       break;
     case 'Clear':
       clearGrid();
+      colorMode = true;
     default:
       return;
   }
