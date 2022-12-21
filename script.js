@@ -32,10 +32,21 @@ document.addEventListener('click', (e) => {
     case 'Eraser':
       colorMode = false;
       break;
+    case 'Clear':
+      clearGrid();
     default:
       return;
   }
 });
+
+
+function clearGrid() {
+  const boxes = document.querySelectorAll('.grid-box');
+
+  boxes.forEach((element) => {
+    element.classList.remove('color-box');
+  });
+}
 
 document.addEventListener('mouseover', (e) => {
   if (!e.target.classList.contains('grid-box')) return;
