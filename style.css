@@ -12,7 +12,16 @@ body {
 }
 
 .workspace {
-  display: flex;
   flex: 4;
   border: 1px solid #000;
+}
+
+.workspace > div {
+  display: flex;
+}
+
+.grid-box {
+  height: 30px;
+  width: 30px;
+  outline: 1px solid #000;
 }
