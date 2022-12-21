@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+}
+
+.control-panel {
+  flex: 1;
+}
+
+.workspace {
+  display: flex;
+  flex: 4;
+  border: 1px solid #000;
+}
