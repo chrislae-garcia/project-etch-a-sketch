@@ -17,3 +17,10 @@ for (y = 0; y < gridSize; y++) {
 
   workspace.appendChild(gridY);
 }
+
+document.addEventListener('mouseover', (e) => {
+  if (!e.target.classList.contains('grid-box')) return;
+  console.log(e.target.classList.contains('grid-box'));
+
+  e.target.classList.add('color-box');
+})
